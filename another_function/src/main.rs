@@ -2,7 +2,7 @@
 fn main() {
     println!("Hello, world!");
     print_labeled_measurement(5, 'h');
-//    another_function(5);
+    another_function(5);
 }
 
 fn another_function(x: i32) {
