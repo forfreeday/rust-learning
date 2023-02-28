@@ -1,0 +1,1 @@
+/Users/liukai/workspaces/rust/rust-learning/trait_test/target/debug/trait_test: /Users/liukai/workspaces/rust/rust-learning/trait_test/src/lib.rs /Users/liukai/workspaces/rust/rust-learning/trait_test/src/main.rs
