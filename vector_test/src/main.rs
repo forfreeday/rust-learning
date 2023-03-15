@@ -7,6 +7,18 @@ fn main() {
     test3_out_bounds();
     test4_each();
     test5_each();
+    test6();
+}
+
+fn test6 () {
+    println!("------------test6-----------");
+    let test = vec![1, 2, 3];
+    let iter = test.iter();
+    for i in iter {
+         println!("Got: {}", i);
+    }
+    println!("vec all: {:?}", test);
+    println!("element: {}", &test[1]);
 }
 
 fn test1() {
