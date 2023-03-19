@@ -12,6 +12,22 @@ pub struct Config {
     pub filename: String,
 }
 
+pub fn search<'a> (query: &str, contents: &'a str) -> Vec<&'a str> {
+    // for 写法
+    // let mut results = Vec::new();
+    // for line in contents.lines() {
+    //     if line.contains(query) {
+    //         results.push(line);
+    //     }
+    // }
+    // results
+
+    // 等价写法
+    contents.lines()
+        .filter(|line| line.contains(query))
+        .collect()
+}
+
 impl Config {
     pub fn new(args: &[String]) -> Result<Config, &'static str> {
         if args.len() < 3 {
