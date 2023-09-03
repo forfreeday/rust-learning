@@ -1,3 +1,28 @@
-target*
+# 编译输出和临时文件
+target/
+Cargo.lock
+**/*.rs.bk
+
+# IDE/编辑器生成的文件
+.idea/
 .vscode/
-debug*
+*.swp
+
+# 测试生成的文件
+**/target/debug/
+**/target/release/
+**/*.rs.gcda
+**/*.rs.gcno
+
+# 库文件
+**/*.so
+**/*.rlib
+**/*.dll
+**/*.dylib
+
+# 工具
+/.rustfmt.toml
+/.cargo/
+
+# 依赖管理工具
+/.cargo/
