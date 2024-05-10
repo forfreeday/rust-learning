@@ -5,7 +5,7 @@ fn main() {
     panic!("ir here!");
     let v = vec![1, 2, 3];
     v[99];
-    panic_test1();
+    // panic_test1();
 }
 
 fn panic_test1() {

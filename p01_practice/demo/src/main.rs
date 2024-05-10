@@ -1,15 +1,15 @@
+fn main() {
+    let result = get_string();
+    println!("Result: {}", result);
 
-#[derive(Debug)]
-struct Rectangle {
-    ridth: u32,
-    height: u32,
+    let another_result = result; // 所有权转移
+
+    // 编译错误：`result` 超出了其作用域
+    // println!("Result: {}", result);
+
+    println!("Another Result: {}", another_result);
 }
 
-fn main() {
-    let rect1 = Rectangle {
-        ridth: 30,
-        height: 50,
-    };
-
-    println!("rect1 is {:#?}", rect1);
+fn get_string() -> String {
+    String::from("Hello")
 }

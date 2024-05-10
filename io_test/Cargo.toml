@@ -1,6 +1,7 @@
-workspace = { members = ["thread_test"] }
+[workspace] 
+members = [] 
 [package]
-name = "test1"
+name = "io_test"
 version = "0.1.0"
 edition = "2021"
 
