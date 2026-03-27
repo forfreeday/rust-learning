@@ -1,0 +1,18 @@
+[
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cd ${fileDirname} && cargo run\n"
+        },
+        "when": "editorLangId == rust"
+    },
+    {
+        "key": "cmd+shift+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cd ${fileDirname} && cargo test\n"
+        },
+        "when": "editorLangId == rust"
+    }
+]

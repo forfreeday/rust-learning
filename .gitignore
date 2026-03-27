@@ -5,7 +5,7 @@ Cargo.lock
 
 # IDE/编辑器生成的文件
 .idea/
-.vscode/
+
 *.swp
 
 # 测试生成的文件
@@ -26,3 +26,4 @@ Cargo.lock
 
 # 依赖管理工具
 /.cargo/
+!/.vscode/launch.json

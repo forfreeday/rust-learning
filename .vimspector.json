@@ -1,5 +1,14 @@
 {
     "configurations": {
+        "launch": {
+            "adapter": "CodeLLDB",
+            "configuration": {
+                "request": "launch",
+                "program": "${Executable}",
+                "cwd": "${workspaceRoot}",
+                "expressions": "native"
+            }
+        },
         "Rust - Test": {
             "adapter": "CodeLLDB",
             "configuration": {

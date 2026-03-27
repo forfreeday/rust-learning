@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "运行 adder",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=adder",
+                    "--package=adder"
+                ],
+                "filter": {
+                    "name": "adder",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/add_test/adder"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "运行 adder (调试)",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=adder",
+                    "--package=adder"
+                ],
+                "filter": {
+                    "name": "adder",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/add_test/adder",
+            "preLaunchTask": "cargo: build"
+        }
+    ]
+}
+

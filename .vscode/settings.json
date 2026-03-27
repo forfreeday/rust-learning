@@ -1,0 +1,21 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "Cargo.toml",
+        "add_test/Cargo.toml"
+    ],
+    "rust-analyzer.runnables.command": "cargo",
+    // 禁用 Vim 模式
+    "vim.disableExtension": true,
+    // 确保 VSCode 的 CodeLens 功能整体启用
+    "editor.codeLens": true,
+    // rust-analyzer CodeLens 配置
+    "rust-analyzer.lens.enable": true,
+    "rust-analyzer.lens.run.enable": true,
+    "rust-analyzer.lens.debug.enable": true,
+    "rust-analyzer.hover.actions.run.enable": true,
+    "rust-analyzer.hover.actions.debug.enable": true,
+    // 额外的 CodeLens 配置确保显示
+    "rust-analyzer.lens.location": "above_name",
+    "rust-analyzer.lens.implementations.enable": true,
+    "rust-analyzer.lens.references.enable": true
+}

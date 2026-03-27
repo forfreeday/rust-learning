@@ -1,4 +1,34 @@
-workspace = { members = ["thread_test"] }
+[workspace]
+members = [
+    "p*_practice/*",
+    "addr",
+    "another_function",
+    "art",
+    "art2",
+    "branches",
+    "dangle",
+    "hash_map_test",
+    "io_test",
+    "life_time_test",
+    "propagating_test",
+    "result_test",
+    "slices",
+    "string_test",
+    "struct_method",
+    "struct_test",
+    "thread_test",
+    "trait_test",
+    "trait_test1",
+    "variables",
+    "vector_test",
+]
+exclude = [
+    "add_test",
+    ".git",
+    ".idea",
+    ".vscode",
+    "target",
+]
 [package]
 name = "test1"
 version = "0.1.0"

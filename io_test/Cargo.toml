@@ -1,5 +1,4 @@
-[workspace] 
-members = [] 
+
 [package]
 name = "io_test"
 version = "0.1.0"
